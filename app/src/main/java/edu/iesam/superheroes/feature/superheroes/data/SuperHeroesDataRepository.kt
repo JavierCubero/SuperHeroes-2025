@@ -7,7 +7,7 @@ import edu.iesam.superheroes.feature.superheroes.domain.SuperHeroeRepository
 class SuperHeroesDataRepository(
     private val apiRemoteDataSource: SuperHeroesApiRemoteDataSource
 ) : SuperHeroeRepository {
-    override fun getSuperHeroes(): List<SuperHeroe> {
+    override fun getSuperHeroes(): Result<List<SuperHeroe>> {
         return apiRemoteDataSource.getSuperHeroes()
     }
 }
