@@ -22,6 +22,7 @@ class SuperHeroesListActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        initSuperHeroes()
     }
     fun initSuperHeroes() {
         val api = SuperHeroesApiRemoteDataSource()
