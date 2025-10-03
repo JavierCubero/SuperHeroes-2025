@@ -35,8 +35,8 @@ class SuperHeroesListActivity : AppCompatActivity() {
 
         result.fold(
             onSuccess = { listSuperHeroes ->
-                listSuperHeroes.forEach { heroe ->
-                    Log.d("@dev", "Heroe: ${heroe.id} - ${heroe.name} - ${heroe.slug} - ${heroe.urlImage}")
+                listSuperHeroes.forEach { hero ->
+                    Log.d("@dev", "Heroe: ${hero.id} - ${hero.name} - ${hero.slug} - ${hero.urlImage}")
                 }
             },
             onFailure = { error ->
