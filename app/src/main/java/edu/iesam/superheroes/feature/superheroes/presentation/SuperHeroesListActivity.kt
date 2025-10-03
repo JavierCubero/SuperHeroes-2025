@@ -31,7 +31,17 @@ class SuperHeroesListActivity : AppCompatActivity() {
 
         val viewModel = SuperHeroesListViewModel(getUseCase)
 
-        viewModel.getClicked()
-        Log.d("@dev", "Stop")
+        val result = viewModel.getClicked()
+
+        result.fold(
+            onSuccess = { listSuperHeroes ->
+                listSuperHeroes.forEach { heroe ->
+                    Log.d("@dev", "Heroe: ${heroe.id} - ${heroe.name} - ${heroe.slug} - ${heroe.urlImage}")
+                }
+            },
+            onFailure = { error ->
+                Log.d("@dev", "Fallo de internet", error)
+            }
+        )
     }
 }
