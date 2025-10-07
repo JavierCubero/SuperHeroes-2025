@@ -8,7 +8,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import edu.iesam.superheroes.R
 import edu.iesam.superheroes.feature.superheroes.data.SuperHeroesDataRepository
-import edu.iesam.superheroes.feature.superheroes.data.remote.SuperHeroesApiRemoteDataSource
+import edu.iesam.superheroes.feature.superheroes.data.remote.api.SuperHeroesApiRemoteDataSource
 import edu.iesam.superheroes.feature.superheroes.domain.GetSuperHeroesUseCase
 import edu.iesam.superheroes.feature.superheroes.domain.SuperHeroeRepository
 
