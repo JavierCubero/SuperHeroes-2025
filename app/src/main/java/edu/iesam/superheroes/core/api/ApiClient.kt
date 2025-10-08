@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class ApiClient {
 
-    private val BASE_URL = "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api"
+    private val BASE_URL = "https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/"
 
     private val retrofit = Retrofit.Builder()
         .baseUrl(BASE_URL)

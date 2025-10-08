@@ -49,4 +49,5 @@ dependencies {
     testImplementation(kotlin("test"))
     implementation(libs.retrofit)
     implementation(libs.converter.gson)
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
 }
