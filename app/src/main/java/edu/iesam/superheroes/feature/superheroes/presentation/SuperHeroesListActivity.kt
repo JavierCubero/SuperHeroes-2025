@@ -27,13 +27,13 @@ class SuperHeroesListActivity : AppCompatActivity() {
         }
         loadSuperHeroes()
     }
+
     private fun loadSuperHeroes() {
         val api = SuperHeroesApiRemoteDataSource(ApiClient())
-
-
-        /*val dataRepository = SuperHeroesDataRepository(api)
+        val dataRepository = SuperHeroesDataRepository(api)
         val getUseCase = GetSuperHeroesUseCase(dataRepository)
 
+        /*
         val viewModel = SuperHeroesListViewModel(getUseCase)
 
         val result = viewModel.getClicked()

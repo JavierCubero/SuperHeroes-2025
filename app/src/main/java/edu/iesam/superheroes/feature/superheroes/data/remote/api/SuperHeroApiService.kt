@@ -12,5 +12,5 @@ interface SuperHeroApiService {
     suspend fun findAll (): Response<List<SuperHeroApiModel>>
 
     @GET("id/{superheroId}.json")
-    fun findById(@Path("superheroId") id: String): SuperHeroApiModel
+    suspend fun findById(@Path("superheroId") id: String): Response<SuperHeroApiModel>
 }
